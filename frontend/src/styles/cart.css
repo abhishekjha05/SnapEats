@@ -1,0 +1,24 @@
+.cart-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  min-height: 500px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background: var(--neutral-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.empty-cart-icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.empty-cart p {
+  color: var(--neutral-dark-gray);
+  font-size: var(--font-size-lg);
+}

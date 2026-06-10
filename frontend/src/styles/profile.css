@@ -1,0 +1,69 @@
+.profile-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.profile-page h1 {
+  color: var(--primary-deep-red);
+  margin-bottom: var(--spacing-xl);
+}
+
+.profile-card {
+  background: var(--neutral-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, var(--primary-warm-orange) 0%, var(--primary-deep-red) 100%);
+  color: var(--neutral-white);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.profile-avatar {
+  font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info h2 {
+  color: var(--neutral-white);
+}
+
+.profile-info p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.profile-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.section {
+  background: var(--neutral-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--primary-warm-orange);
+}
+
+.section h3 {
+  color: var(--primary-deep-red);
+  margin-bottom: var(--spacing-md);
+}
+
+.section p {
+  color: var(--neutral-dark-gray);
+}

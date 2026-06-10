@@ -1,0 +1,66 @@
+.restaurant-detail {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.restaurant-header {
+  background: linear-gradient(135deg, var(--primary-warm-orange) 0%, var(--primary-deep-red) 100%);
+  color: var(--neutral-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.restaurant-header h1 {
+  color: var(--neutral-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.restaurant-header-info {
+  display: flex;
+  gap: var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.menu-item {
+  background: var(--neutral-white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.menu-item-image {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.menu-item h4 {
+  color: var(--primary-deep-red);
+  margin-bottom: var(--spacing-sm);
+}
+
+.menu-item .price {
+  color: var(--primary-warm-orange);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.menu-item .btn-primary {
+  width: 100%;
+}

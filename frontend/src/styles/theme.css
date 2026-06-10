@@ -1,0 +1,173 @@
+/* SnapEats Manjusa Art Theme Colors */
+:root {
+  /* Primary Colors - Inspired by Manjusa Art */
+  --primary-warm-orange: #E8743B;
+  --primary-deep-red: #C42C37;
+  --primary-golden-yellow: #F4B860;
+  --primary-emerald-green: #1B7D5E;
+  --primary-rich-purple: #6B3D7D;
+  
+  /* Secondary Colors */
+  --secondary-cream: #FFF8F0;
+  --secondary-light-coral: #F4A39E;
+  --secondary-light-gold: #FFE5B4;
+  --secondary-sage-green: #A8BFA1;
+  
+  /* Neutral Colors */
+  --neutral-white: #FFFFFF;
+  --neutral-light-gray: #F5F5F5;
+  --neutral-medium-gray: #D3D3D3;
+  --neutral-dark-gray: #666666;
+  --neutral-black: #1A1A1A;
+  
+  /* Utility Colors */
+  --success-green: #27AE60;
+  --warning-yellow: #F39C12;
+  --error-red: #E74C3C;
+  --info-blue: #3498DB;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  
+  /* Typography */
+  --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--secondary-cream);
+  color: var(--neutral-black);
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Manjusa Art Pattern Background */
+.manjusa-pattern {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(232, 116, 59, 0.1) 10px,
+      rgba(232, 116, 59, 0.1) 20px
+    );
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-family-primary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn-primary {
+  background-color: var(--primary-warm-orange);
+  color: var(--neutral-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-deep-red);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background-color: var(--primary-emerald-green);
+  color: var(--neutral-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-rich-purple);
+}
+
+/* Cards */
+.card {
+  background: var(--neutral-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--neutral-black);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --font-size-2xl: 24px;
+    --font-size-xl: 20px;
+  }
+}
